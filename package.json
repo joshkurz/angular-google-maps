@@ -1,5 +1,8 @@
 {
-  "name": "OurField",
+  "name":"AngularJS Google Maps",
+  "node":"0.6.17",
+  "author":"larryeitel"
+
   "version": "0.0.1",
   "private": true,
   "dependencies": {
