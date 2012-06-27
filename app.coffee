@@ -5,7 +5,7 @@ api     = require("./routes/api")
 app = module.exports = express.createServer()
 
 app.configure ->
-  app.set "port", process.env.PORT or 3000
+  app.set "port", process.env.PORT or 19058
   app.set "views", __dirname + "/views"
   app.set "view engine", "jade"
   app.set "view options",
