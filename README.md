@@ -16,7 +16,7 @@ The following technologies are being used for convenient, however, the fundament
 
 ## Current Status
 
-This code running on a dev server at: [angular-google-maps.nodester.com/](angular-google-maps.nodester.com/)
+This code running on a dev server at: [angular-google-maps.nodester.com](http://angular-google-maps.nodester.com/)
 
 ## Initial Objective
 
