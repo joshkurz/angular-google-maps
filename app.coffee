@@ -1,6 +1,5 @@
 express = require("express")
 routes  = require("./routes")
-api     = require("./routes/api")
 
 app = module.exports = express.createServer()
 
