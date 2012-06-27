@@ -1,0 +1,14 @@
+{
+  "name": "OurField",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "jade": ">= 0.0.1",
+    "coffee-script": "~1.3.3",
+    "node-dev": "~0.2.3"
+  },
+  "devDependencies": {
+    "node-dev": "~0.2.3"
+  }
+}

@@ -1,0 +1,1063 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mo",
+				"module"
+			],
+			[
+				"home",
+				"homeView"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pre",
+				"preferences"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"previo",
+				"previousnumber"
+			],
+			[
+				"bou",
+				"boundaries"
+			],
+			[
+				"lat",
+				"latlngs"
+			],
+			[
+				"Boundarie",
+				"BoundariesView"
+			],
+			[
+				"cur",
+				"cursor_live"
+			],
+			[
+				"Home",
+				"HomeControl"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"curr",
+				"currentPlace"
+			],
+			[
+				"objec",
+				"objects"
+			],
+			[
+				"col",
+				"Collection"
+			],
+			[
+				"clo",
+				"closestPlace"
+			],
+			[
+				"InfoWindow",
+				"editInfoWindow"
+			],
+			[
+				"js",
+				"jsapp"
+			],
+			[
+				"get",
+				"get_point"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/partials/map.jade",
+			"settings":
+			{
+				"buffer_size": 31,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/services.js",
+			"settings":
+			{
+				"buffer_size": 643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "coffee/services.coffee",
+			"settings":
+			{
+				"buffer_size": 770,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/app.js",
+			"settings":
+			{
+				"buffer_size": 559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/partials/scripts.jade",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Larry/__prjs/ourfield/static/coffee/views/map.coffee",
+			"settings":
+			{
+				"buffer_size": 6190,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "A call to document.write() from an asycrononously-loaded external script was ignored.",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Windows",
+				"name": "A call to document.write() from an asycrononously-"
+			}
+		}
+	],
+	"build_system": "Packages/CoffeeScript/Commands/CoffeeScript.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Package Control: insta	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack	",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"Snippet: bd",
+				"Snippet: <bdo>"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prev",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"previ",
+				"Markdown Preview: current file in Sublime Text"
+			],
+			[
+				"fetch",
+				"Fetch: Manage remote files"
+			],
+			[
+				"fet",
+				"Fetch: Manage remote files"
+			],
+			[
+				"package",
+				"Package Control: Add Repository"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 107.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Larry/__prjs/a/README.md",
+		"/C/Users/Larry/__prjs/a/views/layout.jade",
+		"/C/Users/Larry/__prjs/a/views/partials/scripts.jade",
+		"/C/Users/Larry/__prjs/a/views/index.jade",
+		"/C/Users/Larry/__prjs/nb/nbn/newsletters/styles/01/img/hr-449x24.gif",
+		"/C/Users/Larry/__prjs/a/public/js/app.js",
+		"/C/Users/Larry/__prjs/a/coffee/app.coffee",
+		"/C/Users/Larry/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Larry/__prjs/_ajs/angularjs-socketio-node-sample/public/js/controllers.js",
+		"/C/Users/Larry/__prjs/_ajs/angularJS-TwitterSearch/webroot/assets/js/SearchController.js",
+		"/C/Users/Larry/__prjs/_ajs/angularJS-TwitterSearch/webroot/TwitterSearch.html",
+		"/C/Users/Larry/__prjs/a/public/js/directives.js",
+		"/C/Users/Larry/__prjs/a/public/js/directives.js_",
+		"/C/Users/Larry/__prjs/a/public/js/controllers.js",
+		"/C/Users/Larry/__prjs/a/coffee/widgets.coffee",
+		"/C/Users/Larry/__prjs/_ajs/angularjs-socketio-node-sample/server.js",
+		"/C/Users/Larry/__prjs/_ajs/angularjs-socketio-node-sample/package.json",
+		"/C/Users/Larry/__prjs/ofm/.git/config",
+		"/C/Users/Larry/__prjs/a/views/partials/home.jade",
+		"/C/Users/Larry/__prjs/a/.git/config",
+		"/C/Users/Larry/__prjs/a/views/partials/navBarTop.jade",
+		"/C/Users/Larry/__prjs/ofm/views/layout.jade",
+		"/C/Users/Larry/__prjs/ofm/views/index.jade",
+		"/C/Users/Larry/__prjs/a/public/js/services.js",
+		"/C/Users/Larry/__prjs/a/public/js/filters.js",
+		"/C/Users/Larry/__prjs/a/public/css/app.css",
+		"/C/Users/Larry/__prjs/a/public/js/lib/angular/angular-resource.js",
+		"/C/Users/Larry/__prjs/a/public/js/lib/angular/angular-widgets.js",
+		"/C/Users/Larry/__prjs/a/coffee/controllers.coffee",
+		"/C/Users/Larry/__prjs/_ajs/angular-express-blog/public/js/app.js",
+		"/C/Users/Larry/__prjs/a/views/partials/styles.jade",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/TopNavBarView.html",
+		"/C/Users/Larry/__prjs/a/views/partials/meta.jade",
+		"/C/Users/Larry/__prjs/ofm/views/includes/styles.jade",
+		"/C/Users/Larry/__prjs/ofm/app.coffee",
+		"/C/Users/Larry/__prjs/a/package.json",
+		"/C/Users/Larry/__prjs/ofm/package.json",
+		"/C/Users/Larry/__prjs/a/app.coffee",
+		"/C/Users/Larry/__prjs/ofm/server.js",
+		"/C/Users/Larry/__prjs/a/app.js",
+		"/C/Users/Larry/__prjs/_ajs/angular-express-bootstrap-seed/views/index.jade",
+		"/C/Users/Larry/__prjs/_ajs/angular-express-bootstrap-seed/views/layout.jade",
+		"/C/Users/Larry/__prjs/_ns/ofs/views/partials/partial2.jade",
+		"/C/Users/Larry/__prjs/_ns/ofs/views/partials/partial1.jade",
+		"/C/Users/Larry/__prjs/_ns/ofs/public/js/controllers.js",
+		"/C/Users/Larry/__prjs/_ns/ofs/routes/api.js",
+		"/C/Users/Larry/__prjs/_ns/ofs/public/js/directives.js",
+		"/C/Users/Larry/__prjs/_ns/ofs/public/js/app.js",
+		"/C/Users/Larry/autostart_console.bat",
+		"/C/Users/Larry/__prjs/ofm/public/bootstrap/js/README.md",
+		"/C/Users/Larry/__prjs/node/grifotv-portfolio/src/App.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/login.coffee",
+		"/C/Users/Larry/__prjs/node/backbone-query-parameters/readme.md",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/LoginView.html",
+		"/C/Users/Larry/__prjs/node/grifotv-portfolio/src/view/AppView.coffee",
+		"/C/Users/Larry/.ssh/id_rsa.pub",
+		"/C/Users/Larry/__prjs/_ajs/angular-express-blog/package.json",
+		"/C/Users/Larry/__prjs/_ajs/angular-express-blog/app.js",
+		"/C/Users/Larry/__prjs/ofm/coffee/routes/app.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/app.coffee",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/HomeView.html",
+		"/C/Users/Larry/__prjs/ofm/views/includes/scripts.jade",
+		"/C/Users/Larry/__prjs/ofm/public/js/routes/app.js",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/home.coffee",
+		"/C/Users/Larry/__prjs/ofm/views/includes/scripts_noroute.jade",
+		"/C/Users/Larry/__prjs/ofm/views/layout_noroute.jade",
+		"/C/Users/Larry/__prjs/ofm/views/login.jade",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/PageView.html",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/views/layout.jade",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/views/login.jade",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/views/home.jade",
+		"/C/Users/Larry/__prjs/node/node-login/app.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/config.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/modules/account-manager.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/router.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/views/account.jade",
+		"/C/Users/Larry/__prjs/node/node-login/app/public/js/views/home.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/modules/country-list.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/server/modules/bcrypt.js",
+		"/C/Users/Larry/__prjs/node/node-login/app/public/js/bCrypt.js",
+		"/C/Users/Larry/__prjs/node/node-login/jsBCrypt/bCrypt.js",
+		"/C/Users/Larry/__prjs/node/node-login/package.json",
+		"/C/Users/Larry/__prjs/node/passport-twitter/examples/signin/views/login.ejs",
+		"/C/Users/Larry/__prjs/node/passport-twitter/examples/signin/views/layout.ejs",
+		"/C/Users/Larry/__prjs/node/passport-twitter/package.json",
+		"/C/Users/Larry/__prjs/ofm/public/css/custom.css",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/map.coffee",
+		"/C/Users/Larry/__prjs/ofm/views/includes/meta.jade",
+		"/C/Users/Larry/__prjs/node/locomotive-passport-boilerplate/.git/config",
+		"/C/Users/Larry/__prjs/node/locomotive-passport-boilerplate/package.json",
+		"/C/Users/Larry/__prjs/ofm_2/app.coffee",
+		"/C/Users/Larry/__prjs/bootstrap/docs/examples/fluid.html",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/page.coffee",
+		"/C/Users/Larry/__prjs/ofm/public/js/views/home.js",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/MapView.html",
+		"/C/Users/Larry/__prjs/ourfield/templates/map/base.html",
+		"/C/Users/Larry/__prjs/ofm_2/public/tpl/MapView.html",
+		"/C/Users/Larry/__prjs/ofm/coffee/app.coffee_",
+		"/C/Users/Larry/__prjs/ourfield/static/coffee/views/map.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/map.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/prefs.coffee",
+		"/C/Users/Larry/__prjs/ofm_/views/layout.jade",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/topnavbar.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/routes/index.coffee",
+		"/C/Users/Larry/__prjs/ofm_2/views/layout.jade",
+		"/C/Users/Larry/__prjs/ofm_/views/includes/scripts.jade",
+		"/C/Users/Larry/__prjs/ofm/views/meta.jade",
+		"/C/Users/Larry/__prjs/ofm_2/coffee/app.coffee",
+		"/C/Users/Larry/__prjs/node/express-socket.io-backbone-bootstrap/public/javascripts/app.js",
+		"/C/Users/Larry/__prjs/ofm/public/tpl/BodyView.html",
+		"/C/Users/Larry/__prjs/node/backbone-cellar/bootstrap/js/main.js",
+		"/C/Users/Larry/__prjs/ofm/coffee/setup.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/utils.coffee",
+		"/C/Users/Larry/__prjs/ofm_2/public/tpl/HomeView.html",
+		"/C/Users/Larry/__prjs/ofm_2/coffee/main.coffee",
+		"/C/Users/Larry/__prjs/ofm_2/coffee/views/home.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/body.js",
+		"/C/Users/Larry/__prjs/ofm_/coffee/views/contentmain.coffee",
+		"/C/Users/Larry/__prjs/ofm_2/coffee/views/contentmain.coffee",
+		"/C/Users/Larry/__prjs/ofm_2/views/index.jade",
+		"/C/Users/Larry/__prjs/ofm_/app.coffee",
+		"/C/Users/Larry/__prjs/ofm/coffee/views/contentmain.coffee",
+		"/C/Users/Larry/__prjs/ofm/views/templates/t.jade",
+		"/C/Users/Larry/__prjs/ofm/wc.bat",
+		"/C/Users/Larry/__prjs/ofm/cakefile",
+		"/C/Users/Larry/__prjs/ofm/views/t.jst.jade",
+		"/C/Users/Larry/__prjs/ofm/views/templates/header.js",
+		"/C/Users/Larry/__prjs/ofm/views/layout.jade____"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Larry\\__prjs\\_ajs\\angular-phonecat",
+			"C:\\Users\\Larry\\__prjs\\node\\node-login",
+			"C:\\Users\\Larry\\__prjs\\node\\node-login\\app\\server",
+			"C:\\Users\\Larry\\__prjs\\node\\node-login",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\static",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\ofm",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\node\\express-backbone-coffee-template",
+			"C:\\Users\\Larry\\__prjs\\ofm",
+			"C:\\Users\\Larry\\__prjs\\ofm\\node_modules",
+			"C:\\Users\\Larry\\__prjs\\node\\backbone-cellar\\tutorial\\final",
+			"C:\\Users\\Larry\\__prjs\\nodeblox",
+			"C:\\Users\\Larry\\__prjs\\ubuntu\\dev\\tw",
+			"C:\\Users\\Larry\\__prjs\\ubuntu\\dev\\basic",
+			"C:\\Users\\Larry\\__prjs\\ubuntu\\dev\\tw",
+			"C:\\Users\\Larry\\__prjs\\ubuntu\\dev\\ofb",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\answers",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\answers,*.js",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn,*.php",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\answers\\qa-include",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\answers",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\_lib",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\answers",
+			"C:\\Users\\Larry\\__prjs\\nb\\nbn\\qa",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\static\\coffee",
+			"C:\\_prm",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\static\\coffee",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\ve\\Lib\\site-packages\\pinax\\projects\\basic_project",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\ourfield_2\\templates",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\templates",
+			"C:\\Users\\Larry\\__prjs\\ourfield_2",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\ve\\Lib\\site-packages\\pinax_theme_bootstrap",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\ourfield_2",
+			"C:\\Users\\Larry\\__prjs\\ourfield",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\scripts",
+			"C:\\Users\\Larry\\__prjs\\z_others\\memento",
+			"C:\\Users\\Larry\\__prjs\\ourfield\\apps",
+			"C:\\Users\\Larry\\AppData\\Roaming\\Sublime Text 2\\Packages\\Terminal",
+			"C:\\Users\\Larry\\AppData\\Roaming\\Sublime Text 2\\Packages\\SideBarEnhancements",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center",
+			"// ",
+			"myApp",
+			"phonecat",
+			"    ",
+			"'/",
+			"footer1-title",
+			"hash",
+			"genSalt",
+			"countries",
+			"CT",
+			"console",
+			"country-list",
+			"countries",
+			"EM",
+			"bcrypt",
+			"buffertools",
+			"\"></script>",
+			"<script src=\"../assets/js",
+			"contentMainEl",
+			"mapDivEl",
+			"options",
+			"@options",
+			"options",
+			"getAttributeNode",
+			"resize",
+			"headerView",
+			"detect_slo",
+			"detect-slo",
+			"path",
+			"mapCanvas",
+			"path",
+			"js/",
+			"runInThisContext",
+			"var compiledWrapper = runInThisContext",
+			"path.existsSync",
+			"Header",
+			"Backbone.history",
+			"js\"",
+			"\">",
+			"<script src=\"../assets/",
+			"bootstrap-transition",
+			"index",
+			"../",
+			"session",
+			"req.session",
+			"bcrypt",
+			"div",
+			"\\t",
+			"div",
+			"../assets/ico/",
+			"../assets/js",
+			"../assets/css",
+			"languages",
+			"ignoredRe",
+			"brunch.io",
+			"callback_url",
+			"authenticate",
+			"oauth",
+			"eco",
+			"clicky",
+			"\"></script>",
+			"<script src=\"",
+			"http://http://",
+			"{",
+			"copy",
+			"prepa",
+			"example",
+			"\\t",
+			"join",
+			"JOIN OUR",
+			"If you received this message from a friend",
+			"document",
+			"methods",
+			"span",
+			"dear",
+			"question",
+			"logo_drop.jpg",
+			"prepare now",
+			"DONATE NOW",
+			"logo",
+			"http://www.noblood.org/",
+			"sanramon",
+			"san ramon",
+			"sanramon",
+			"http://www.noblood.org/newsletters/2012-jun",
+			"http://www.noblood.org/newsletters/style",
+			"http://www.noblood.org/_news",
+			"june 1",
+			"san ramon",
+			"prepare now",
+			"join",
+			"example",
+			"in this issue",
+			"our spon",
+			"Managing Editor",
+			"drop",
+			"height=\"122\"",
+			"Advance Directives",
+			"future ",
+			"nobloodtest",
+			"title=\".*?\"\\s*",
+			"id=\"Enews.*?\"\\s*",
+			"spacer",
+			"www.nobloodtest",
+			"title=\".*?\"\\s*",
+			"\\",
+			"categor",
+			"categories",
+			"privacy",
+			"qa_answer_click",
+			"list_no_decoration widget_list",
+			"cw_cms_save_sponsors_widget",
+			"forumhome_lastest_news",
+			"Transfusion Alternatives",
+			"new feature",
+			"Home",
+			"contact",
+			"home",
+			"senttoemail",
+			"qa_answer_create",
+			"qa_question_create",
+			"email",
+			",",
+			"ybunch",
+			"qa_lang_html",
+			"tag_cloud",
+			"qa_ask_box"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"  ",
+			"'",
+			"')",
+			"script(src='lib",
+			"containerEl",
+			"mapEl",
+			"topNavBarView",
+			"map_canvas",
+			"js/lib/",
+			"fs.existsSync",
+			"NavBar",
+			"js\")",
+			"\"",
+			"script(src=\"",
+			"",
+			"req.locals",
+			"  ",
+			"",
+			"/bootstrap/js",
+			"/bootstrap/less",
+			"m.ourfield.org",
+			"')",
+			"script(src='",
+			",",
+			"drop-transparent.png",
+			"%host%",
+			"http://www.noblood.org/newsletters/2012/06jun01",
+			"http://www.noblood.org/newsletters/styles/01",
+			"http://www.noblood.org/newsletters",
+			"noblood",
+			"",
+			"www.noblood",
+			"",
+			"/",
+			"",
+			"tags_sidebar",
+			":",
+			"transfusion-alternatives-patient-blood-management-resources-map",
+			";",
+			"\\'",
+			"answers/",
+			"nobloodtest",
+			"?/?$ /content/",
+			" ",
+			"password=zaq12wsx",
+			"unoblood",
+			"noblood.dreamhosters.com",
+			"nobloodo",
+			"nobloodtest",
+			"",
+			"/static/css/",
+			"cancelWatch",
+			"window.map",
+			"",
+			"placeTypes",
+			"@placeTypes",
+			"placeTypes",
+			"boundary",
+			"boundaries",
+			"boundary",
+			"Boundaries",
+			"Boundary",
+			"boundary",
+			"Boundary",
+			"",
+			"#",
+			"",
+			"calcDistanceSquare",
+			"currentMaxTerritoryMarkerno",
+			"markerno",
+			"Places",
+			"Place",
+			"0",
+			"user.is_authenticated",
+			"lng",
+			"place",
+			"Place",
+			"/",
+			"center",
+			"zoom",
+			"tweet_resource",
+			"AppView",
+			"places",
+			"place",
+			"Place",
+			"CR"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/partials/map.jade",
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/js/services.js",
+					"settings":
+					{
+						"buffer_size": 643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "coffee/services.coffee",
+					"settings":
+					{
+						"buffer_size": 770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/js/app.js",
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "views/partials/scripts.jade",
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Larry/__prjs/ourfield/static/coffee/views/map.coffee",
+					"settings":
+					{
+						"buffer_size": 6190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5695,
+								5670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "A call to document.write() from an asycrononously-",
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.679008269684,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Larry/__prjs/ourfield/templates/map/ourfield.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true
+}
