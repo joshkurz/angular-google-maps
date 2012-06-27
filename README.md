@@ -1,7 +1,5 @@
 # AngularJS Google Maps Example Application 
 
-
-
 ## Overview
 
 The purpose of this project is to encourage collaboration from the community with how best to work with Google Maps using AngularJS.
@@ -13,14 +11,14 @@ Please feel free to submit issues for discussion. I will try to implement sugges
 The following technologies are being used for convenient, however, the fundamental code involving Google Maps and AngularJS can be leveraged on other projects.
 
 - node.js
+- express.js
 - angularjs
 - google maps api
-- coffee-script (see wc.bat for real-time compiling)
 - twitter bootstrap
 
 ## Current Status
 
-I have a project based on this code running on a dev server at: [m.ourfield.org](m.ourfield.org)
+This code running on a dev server at: [angular-google-maps.nodester.com/](angular-google-maps.nodester.com/)
 
 ## Initial Objective
 
