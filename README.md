@@ -2,9 +2,7 @@
 
 ## Overview
 
-The purpose of this project is to encourage collaboration from the community with how best to work with Google Maps using AngularJS.
-Although I have been a developer since '82, I have moderate experience with JavaScript and am very new to AngularJS. I do however see advantages using this framework.
-Please feel free to submit issues for discussion. I will try to implement suggestions ASAP.
+The purpose of this project is to encourage collaboration from the community with how best to work with Google Maps using AngularJS. I started a [thread](https://groups.google.com/forum/?fromgroups&nomobile=true#!topic/angular/CM8ewcWeTF4) in AngularJS Google Groups.
 
 ## Technologies
 
