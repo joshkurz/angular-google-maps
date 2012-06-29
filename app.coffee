@@ -24,8 +24,12 @@ app.configure "development", ->
 app.configure "production", ->
   app.use express.errorHandler()
 
+###
+No more routes. Yay!
 app.get "/", routes.index
 app.get "/partials/:name", routes.partials
 app.get "*", routes.index
+###
+
 app.listen app.settings.port, ->
   console.log "Express server listening on port %d in %s mode", app.settings.port, app.settings.env

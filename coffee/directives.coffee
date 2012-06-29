@@ -1,1 +1,2 @@
-angular.module "ofm.directives", []
+module = angular.module "ofm.directives", []
+

@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="ofm">
+<head>
+	<title>Angular-Google-Maps</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="shortcut icon" href="ico/favicon.ico"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+	<link rel="stylesheet" href="css/app.css"/>
+	<link href="css/print.css" rel="stylesheet" media="print"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png"/>
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png"/>
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png"/>
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"/>
+
+	<script src="js/lib/angular/angular.js"></script>
+	<script src="js/lib/script/script.min.js"></script>
+	<script src="js/lib/angular/angular-resource.min.js"></script>
+	<script src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTmi_pcXMZtLX5MWFRQgbVEYx-h-pDXO4&amp;sensor=false"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+<input ng-model="map.lat">
+<div id="map" ng-show="mapShown()"></div>
+
+<!-- NAVBAR -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<ul class="nav pull">
+			<li><a href="#/" class="btn btn-large">Home</a></li>
+			<li><a href="#/map" class="btn btn-large">Map</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- MAIN VIEW -->
+<div ng-view></div>
+
+
+</body>
+</html>

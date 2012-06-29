@@ -1,6 +1,6 @@
 extends layout
 
 block body
-  #map 
-  .container-fluid(ng-view)  
+  google-map(id="mainMap", data="mapData", ng-show="map-data")
+  .container-fluid(ng-view)
   include /partials/scripts

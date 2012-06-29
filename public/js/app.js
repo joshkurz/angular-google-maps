@@ -2,19 +2,20 @@
 (function() {
   "use strict";
 
-  angular.module("ofm", ["ofm.filters", "ofm.services", "ofm.directives"]).config([
-    "$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
-      $routeProvider.when("/", {
-        templateUrl: "partials/home",
-        controller: HomeCtrl
-      }).when("/map", {
-        templateUrl: "partials/map",
-        controller: MapCtrl
-      }).otherwise({
-        redirectTo: "/"
-      });
-      return $locationProvider.html5Mode(true);
-    }
-  ]);
+  var app;
+
+  app = angular.module("ofm", ["ofm.filters", "ofm.services", "ofm.directives", "ofm.controllers"]);
+
+  app.config(function($routeProvider, $locationProvider) {
+    return $routeProvider.when("/", {
+      templateUrl: "partials/home.html",
+      controller: 'HomeCtrl'
+    }).when("/map", {
+      templateUrl: "partials/map.html",
+      controller: 'MapCtrl'
+    }).otherwise({
+      redirectTo: "/"
+    });
+  });
 
 }).call(this);

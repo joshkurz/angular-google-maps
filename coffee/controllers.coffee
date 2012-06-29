@@ -1,12 +1,14 @@
-root = exports ? this
 
-root.HomeCtrl = ($scope) ->
-  $("#map").hide()
-  $(".container-fluid").show()
+module = angular.module("ofm.controllers", [])
 
-root.MapCtrl = ($scope, GoogleMaps) ->
-  $scope.map = GoogleMaps
-  $("#map").show()
-  $(".container-fluid").hide()
-  
-root.MapCtrl.$inject = [ "$scope", "GoogleMaps" ]
+module.controller "MainCtrl", ($scope, GoogleMap, $location) ->
+	$scope.mapShown = ->
+		return $location.path().indexOf('/map') > -1
+
+	$scope.map = GoogleMap
+
+
+module.controller "HomeCtrl", ($scope, GoogleMap) ->
+
+
+module.controller "MapCtrl", ($scope) ->

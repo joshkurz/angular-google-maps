@@ -1,30 +1,56 @@
-"use strict"
-app = undefined
-curCenter = undefined
-initialize = undefined
-curCenter = null
-initialize = (map_id, lat, lng, zoom) ->
-  map = undefined
-  myOptions = undefined
-  myOptions =
-    zoom: zoom
-    center: new google.maps.LatLng(lat, lng)
+module = angular.module "ofm.services", []
+
+initializeGoogleMap = (options, $location) ->
+  $("#map").hide()
+  return new google.maps.Map(document.getElementById("map"), {
+    zoom: options.zoom
+    center: new google.maps.LatLng(options.lat, options.lng)
     mapTypeId: google.maps.MapTypeId.ROADMAP
+  })
+  $(window).resize ->
+    $("#map").css 'height', $(window).height() - 45
 
-  map = new google.maps.Map($(map_id)[0], myOptions)
-  google.maps.event.addListener map, "zoom_changed", ->
-    console.log "event"
 
-app = angular.module("ofm.services", [])
-app.factory "GoogleMaps", ->
-  lat = undefined
-  lng = undefined
-  map = undefined
-  map_id = undefined
-  zoom = undefined
-  map_id = "#map"
-  lat = 9.984336
-  lng = -84.168733
-  zoom = 17
-  map = initialize(map_id, lat, lng, zoom)
-  map
+module.factory "GoogleMap", ($rootScope, $location) ->
+  map = initializeGoogleMap(zoom: 10, lat: 10, lng: 10)
+
+  # setLocationFromData = (data) ->
+  #   params = (key + "=" + val for key,val of data).join('&')
+  #   $location.path $location.path().substr(0,$location.path().indexOf('/')) + "?" + params
+
+  MapData = 
+    zoom: 10
+    lat: 10
+    lng: 10
+
+  # Bind scope changes to map
+  # -------------------------
+  $rootScope.$watch (->MapData.zoom), (zoom, oldValue) ->
+    # map.setZoom(value)
+    # setLocationFromData(MapData)
+
+  $rootScope.$watch (->MapData.lat), (lat, oldValue) ->
+    console.log 'new lat is '+lat
+    # map.setLat(value)
+    # setLocationFromData(MapData)
+
+  $rootScope.$watch (->MapData.lng), (lng, oldValue) ->
+    # map.setLng(value)
+    # setLocationFromData(MapData)
+
+  # Bind map changes to scope
+  # -------------------------
+  google.maps.event.addListener(map, "zoom_changed", ->
+    $rootScope.$apply -> MapData.zoom = newValue
+  )
+
+  return MapData
+
+module.factory "GoogleMapUrl", ($rootScope, $location, $route, GoogleMap) ->
+  locationMapData = {}
+
+  
+
+  $rootScope.$watch (-> return MapData), ->
+    setLocationFromData mapData
+  , true
