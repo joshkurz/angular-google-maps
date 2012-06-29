@@ -1,18 +1,18 @@
 express = require("express")
-routes = require("./routes")
+#routes = require("./routes")
 app = module.exports = express.createServer()
 
 app.configure ->
   app.set "port", process.env.PORT or 19058
-  app.set "views", __dirname + "/views"
-  app.set "view engine", "jade"
-  app.set "view options",
-    layout: false
+  # app.set "views", __dirname + "/views"
+  # app.set "view engine", "jade"
+  # app.set "view options",
+  #   layout: false
 
   app.use express.bodyParser()
   app.use express.methodOverride()
   app.use express.static(__dirname + "/public")
-  app.use app.router
+  #app.use app.router
 
 app.configure "development", ->
   app.set "port", process.env.PORT or 3000
