@@ -29,7 +29,7 @@ module.factory "GoogleMap", ($rootScope, $location) ->
 
   # setLocationFromData = (data) ->
   #   params = (key + "=" + val for key,val of data).join('&')
-  #   $location.path $location.path().substr(0,$location.path().indexOf('/')) + "?" + params
+  #   window.location.href = $location.path() + "?" + params
 
   MapData = 
     zoom: 10
