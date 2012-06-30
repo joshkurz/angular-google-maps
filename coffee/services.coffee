@@ -1,6 +1,11 @@
 module = angular.module "ofm.services", []
 
-initializeGoogleMap = (options, $location) ->
+###
+We could make a directive for the map .. but there's only ever one map element
+So there's really no use in making a directive.
+We just set up the map here one time for all
+###
+initializeGoogleMap = (options) ->
   $window = $(window)
   $("#map").hide()
 
