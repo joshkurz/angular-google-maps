@@ -5,14 +5,20 @@
   module = angular.module("ofm.services", []);
 
   initializeGoogleMap = function(options, $location) {
+    var $window;
+    $window = $(window);
     $("#map").hide();
+    $window.bind('resize', function() {
+      return $("#map").css({
+        height: ($window.height() - 45) + 'px',
+        width: $window.width(),
+        top: '45px'
+      });
+    });
     return new google.maps.Map(document.getElementById("map"), {
       zoom: options.zoom,
       center: new google.maps.LatLng(options.lat, options.lng),
       mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-    return $(window).resize(function() {
-      return $("#map").css('height', $(window).height() - 45);
     });
   };
 
@@ -45,16 +51,6 @@
       });
     });
     return MapData;
-  });
-
-  module.factory("GoogleMapUrl", function($rootScope, $location, $route, GoogleMap) {
-    var locationMapData;
-    locationMapData = {};
-    return $rootScope.$watch((function() {
-      return MapData;
-    }), function() {
-      return setLocationFromData(mapData);
-    }, true);
   });
 
 }).call(this);

@@ -1,14 +1,22 @@
 module = angular.module "ofm.services", []
 
 initializeGoogleMap = (options, $location) ->
+  $window = $(window)
   $("#map").hide()
+
+  $window.bind('resize', ->
+    $("#map").css(
+      height: ($window.height() - 45)+'px'
+      width: $window.width()
+      top: '45px'
+    )
+  )
+
   return new google.maps.Map(document.getElementById("map"), {
     zoom: options.zoom
     center: new google.maps.LatLng(options.lat, options.lng)
     mapTypeId: google.maps.MapTypeId.ROADMAP
   })
-  $(window).resize ->
-    $("#map").css 'height', $(window).height() - 45
 
 
 module.factory "GoogleMap", ($rootScope, $location) ->
@@ -45,12 +53,3 @@ module.factory "GoogleMap", ($rootScope, $location) ->
   )
 
   return MapData
-
-module.factory "GoogleMapUrl", ($rootScope, $location, $route, GoogleMap) ->
-  locationMapData = {}
-
-  
-
-  $rootScope.$watch (-> return MapData), ->
-    setLocationFromData mapData
-  , true

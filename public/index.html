@@ -29,7 +29,7 @@
 <body ng-controller="MainCtrl">
 
 <input ng-model="map.lat">
-<div id="map" ng-show="mapShown()"></div>
+<div id="map" style="position:absolute;" ng-show="mapShown()"></div>
 
 <!-- NAVBAR -->
 <div class="navbar navbar-fixed-top">
@@ -42,7 +42,7 @@
 </div>
 
 <!-- MAIN VIEW -->
-<div ng-view></div>
+<div ng-hide="mapShown()" ng-view></div>
 
 
 </body>
