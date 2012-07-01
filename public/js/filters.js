@@ -2,6 +2,6 @@
 (function() {
   "use strict";
 
-  angular.module("ofm.filters", []);
+  angular.module("myApp.filters", []);
 
 }).call(this);

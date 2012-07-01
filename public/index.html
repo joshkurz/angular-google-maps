@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="ofm">
+<html ng-app="myApp">
 <head>
 	<title>Angular-Google-Maps</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,21 +28,34 @@
 </head>
 <body ng-controller="MainCtrl">
 
-<input ng-model="map.lat">
-<div id="map" style="position:absolute;" ng-show="mapShown()"></div>
+	<div id="map" ng-show="mapShown()"></div>
 
-<!-- NAVBAR -->
-<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<ul class="nav pull">
-			<li><a href="#/" class="btn btn-large">Home</a></li>
-			<li><a href="#/map" class="btn btn-large">Map</a></li>
-		</ul>
+	<div id="map-crosshair">
+		<img src="img/crosshair.png" />
 	</div>
-</div>
 
-<!-- MAIN VIEW -->
-<div ng-hide="mapShown()" ng-view></div>
+
+
+	<div id="map-info">
+		{{map.map.getCenter().lat()}},
+		{{map.map.currCenter.lng}}
+
+		<a href="https://maps.google.com/maps?q={{map.lat}},{{map.lng}}&t={{map.mapType}}&z={{map.zoom}}">Google Map</a>
+	</div>
+
+
+	<!-- NAVBAR -->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<ul class="nav pull">
+				<li><a href="#/" class="btn btn-large">Home</a></li>
+				<li><a href="#/map" class="btn btn-large">Map</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- MAIN VIEW -->
+	<div ng-hide="mapShown()" ng-view></div>
 
 
 </body>

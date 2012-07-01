@@ -2,13 +2,12 @@
 (function() {
   var module;
 
-  module = angular.module("ofm.controllers", []);
+  module = angular.module("myApp.controllers", []);
 
   module.controller("MainCtrl", function($scope, GoogleMap, $location) {
-    $scope.mapShown = function() {
+    return $scope.mapShown = function() {
       return $location.path().indexOf('/map') > -1;
     };
-    return $scope.map = GoogleMap;
   });
 
   module.controller("HomeCtrl", function($scope, GoogleMap) {});

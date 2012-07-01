@@ -2,6 +2,6 @@
 (function() {
   var module;
 
-  module = angular.module("ofm.directives", []);
+  module = angular.module("myApp.directives", []);
 
 }).call(this);

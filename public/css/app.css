@@ -3,14 +3,6 @@ body { margin: 0; padding: 0; }
   padding: 3px 5px 5px;
 }
 
-.navbar .nav.pull-right {
-  padding-top: 5px;
-}
-
-.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-  padding: 0 5px;
-}
-
 .masthead {
   margin-bottom: 72px;
   padding-top: 36px;
@@ -47,3 +39,28 @@ body { margin: 0; padding: 0; }
 }
 
 #map img {max-width: none;}
+
+#map-crosshair { text-align: center;}
+#map-crosshair img {
+  /*display:none;*/
+  z-index: 10;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin-top: 8px;
+  margin-left: -16px;
+}
+
+#map-info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  opacity:0.5;
+  background-color: grey;
+  height: 50px;
+  width: 50%;
+  z-index: 9999;
+
+}

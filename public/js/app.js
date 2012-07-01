@@ -4,7 +4,7 @@
 
   var app;
 
-  app = angular.module("ofm", ["ofm.filters", "ofm.services", "ofm.directives", "ofm.controllers"]);
+  app = angular.module("myApp", ["myApp.filters", "myApp.services", "myApp.directives", "myApp.controllers"]);
 
   app.config(function($routeProvider, $locationProvider) {
     return $routeProvider.when("/", {
