@@ -34,15 +34,12 @@
 		<img src="img/crosshair.png" />
 	</div>
 
-
-
 	<div id="map-info">
-		{{map.map.getCenter().lat()}},
-		{{map.map.currCenter.lng}}
+		{{mapCenter.lat}},
+		{{mapCenter.lng}}
 
-		<a href="https://maps.google.com/maps?q={{map.lat}},{{map.lng}}&t={{map.mapType}}&z={{map.zoom}}">Google Map</a>
+		<a href="https://maps.google.com/maps?q={{mapCenter.lat}},{{mapCenter.lng}}&t={{mapType}}&z={{mapZoom}}">Google Map</a>
 	</div>
-
 
 	<!-- NAVBAR -->
 	<div class="navbar navbar-fixed-top">
