@@ -16,8 +16,13 @@
 
       this.resizeMapEl = __bind(this.resizeMapEl, this);
 
+      this.onDragEnd = __bind(this.onDragEnd, this);
+
+      this.onDragStart = __bind(this.onDragStart, this);
+
       var addListener, lat, ll, lng, q;
       this.rootScope = options.rootScope;
+      this.dragging = 0;
       this.location = options.location;
       q = this.location.search().q;
       if (q) {
@@ -33,8 +38,10 @@
       }
       this.zoom = parseInt(this.location.search().z) || options.zoom;
       this.mapType = this.location.search().t || options.mapType;
-      this.navBarHeight = options.navBarHeight;
+      this.navBarHeight = this.rootScope.navBarHeight;
       this.win = $(window);
+      this.crossHairLatEl = $('#mapcrosshairlat');
+      this.crossHairLngEl = $('#mapcrosshairlng');
       this.mapEl = $("#map");
       this.mapTypes = {
         m: 'roadmap',
@@ -64,7 +71,6 @@
       this.mapEl.hide();
       this.resizeMapEl();
       this.win.resize(this.resizeMapEl);
-      console.log(google.maps.MapTypeId.ROADMAP);
       this.map = new google.maps.Map(this.mapEl[0], {
         zoom: this.zoom,
         center: new google.maps.LatLng(this.center.lat, this.center.lng),
@@ -74,15 +80,28 @@
       addListener(this.map, 'center_changed', this.onCenterChanged);
       addListener(this.map, 'maptypeid_changed', this.onTypeChange);
       addListener(this.map, 'zoom_changed', this.onZoomChange);
+      addListener(this.map, 'dragstart', this.onDragStart);
+      addListener(this.map, 'dragend', this.onDragEnd);
       this.rootScope.protocol = this.location.protocol();
       this.rootScope.host = this.location.host();
       this.rootScope.mapCenter = this.center;
       this.rootScope.mapZoom = this.zoom;
       this.rootScope.mapType = this.mapType;
-      this.setLocationPath();
+      this.updateLocation();
     }
 
-    GMap.prototype.setLocationPath = function() {};
+    GMap.prototype.updateLocation = function() {
+      return this.location.url("/maps?q=" + this.center.lat + "," + this.center.lng + "&t=" + this.mapType + "&z=" + this.zoom);
+    };
+
+    GMap.prototype.onDragStart = function() {
+      return this.dragging = true;
+    };
+
+    GMap.prototype.onDragEnd = function() {
+      this.dragging = false;
+      return this.onCenterChanged();
+    };
 
     GMap.prototype.resizeMapEl = function() {
       return this.mapEl.css('height', this.win.height() - this.navBarHeight);
@@ -93,17 +112,19 @@
       center = this.map.getCenter();
       this.center.lat = center.lat();
       this.center.lng = center.lng();
-      $('#crosshairlat').html(this.center.lat);
-      $('#crosshairlng').html(this.center.lng);
-      this.rootScope.mapCenter = this.center;
-      this.rootScope.$apply();
-      return this.setLocationPath();
+      this.crossHairLatEl.html(this.center.lat);
+      this.crossHairLngEl.html(this.center.lng);
+      if (!this.dragging) {
+        this.rootScope.mapCenter = this.center;
+        this.rootScope.$apply();
+        return this.updateLocation();
+      }
     };
 
     GMap.prototype.onZoomChange = function() {
       this.rootScope.mapZoom = this.zoom = this.map.getZoom();
       this.rootScope.$apply();
-      return this.setLocationPath();
+      return this.updateLocation();
     };
 
     GMap.prototype.onTypeChange = function() {
@@ -118,7 +139,7 @@
       }
       this.rootScope.mapType = this.mapType[0];
       this.rootScope.$apply();
-      return this.setLocationPath();
+      return this.updateLocation();
     };
 
     return GMap;
@@ -134,7 +155,6 @@
     initPosition = SJO;
     initZoom = 16;
     mapOptions = {
-      navBarHeight: 40,
       rootScope: $rootScope,
       location: $location,
       zoom: initZoom,

@@ -17,3 +17,18 @@ app.config ($routeProvider, $locationProvider) ->
 
   # $locationProvider.html5Mode true
  
+app.run ($rootScope) ->
+  rootScope = $rootScope
+  rootScope.navBarHeight = 40
+
+  # $('body')
+  #   # .mouseup ->
+  #   #   rootScope.mouseup = 1
+  #   #   rootScope.mousedown = 0
+  #   #   #rootScope.$apply()
+  #   #   #console.log  'mouseup', rootScope.mouseup
+  #   .mousedown ->
+  #     rootScope.mousedown = 1
+  #     rootScope.mouseup = 0
+  #     #rootScope.$apply()
+  #     #console.log  'mousedown', rootScope.mousedown

@@ -21,4 +21,10 @@
     });
   });
 
+  app.run(function($rootScope) {
+    var rootScope;
+    rootScope = $rootScope;
+    return rootScope.navBarHeight = 40;
+  });
+
 }).call(this);
