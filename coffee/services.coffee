@@ -76,6 +76,8 @@ class GMap
     #   @preferences.set('zoom', window.map.getZoom())
 
 
+    @rootScope.protocol = @location.protocol()
+    @rootScope.host = @location.host()
     @rootScope.mapCenter = @center
     @rootScope.mapZoom = @zoom
     @rootScope.mapType = @mapType

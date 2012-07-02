@@ -74,6 +74,8 @@
       addListener(this.map, 'center_changed', this.onCenterChanged);
       addListener(this.map, 'maptypeid_changed', this.onTypeChange);
       addListener(this.map, 'zoom_changed', this.onZoomChange);
+      this.rootScope.protocol = this.location.protocol();
+      this.rootScope.host = this.location.host();
       this.rootScope.mapCenter = this.center;
       this.rootScope.mapZoom = this.zoom;
       this.rootScope.mapType = this.mapType;
