@@ -16,16 +16,28 @@
 
       this.resizeMapEl = __bind(this.resizeMapEl, this);
 
-      var addListener;
+      var addListener, lat, ll, lng, q;
       this.rootScope = options.rootScope;
-      this.center = options.center;
-      this.zoom = options.zoom;
-      this.mapType = options.mapType;
+      this.location = options.location;
+      q = this.location.search().q;
+      if (q) {
+        ll = q.split(',');
+        lat = ll[0];
+        lng = ll[1];
+        this.center = {
+          lat: lat,
+          lng: lng
+        };
+      } else {
+        this.center = options.center;
+      }
+      this.zoom = parseInt(this.location.search().z) || options.zoom;
+      this.mapType = this.location.search().t || options.mapType;
       this.navBarHeight = options.navBarHeight;
       this.win = $(window);
       this.mapEl = $("#map");
       this.mapTypes = {
-        m: 'map',
+        m: 'roadmap',
         h: 'hybrid'
       };
       ({
@@ -52,10 +64,11 @@
       this.mapEl.hide();
       this.resizeMapEl();
       this.win.resize(this.resizeMapEl);
+      console.log(google.maps.MapTypeId.ROADMAP);
       this.map = new google.maps.Map(this.mapEl[0], {
         zoom: this.zoom,
-        center: new google.maps.LatLng(options.center.lat, options.center.lng),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        center: new google.maps.LatLng(this.center.lat, this.center.lng),
+        mapTypeId: this.mapTypes[this.mapType]
       });
       addListener = google.maps.event.addListener;
       addListener(this.map, 'center_changed', this.onCenterChanged);
@@ -64,7 +77,10 @@
       this.rootScope.mapCenter = this.center;
       this.rootScope.mapZoom = this.zoom;
       this.rootScope.mapType = this.mapType;
+      this.setLocationPath();
     }
+
+    GMap.prototype.setLocationPath = function() {};
 
     GMap.prototype.resizeMapEl = function() {
       return this.mapEl.css('height', this.win.height() - this.navBarHeight);
@@ -78,12 +94,14 @@
       $('#crosshairlat').html(this.center.lat);
       $('#crosshairlng').html(this.center.lng);
       this.rootScope.mapCenter = this.center;
-      return this.rootScope.$apply();
+      this.rootScope.$apply();
+      return this.setLocationPath();
     };
 
     GMap.prototype.onZoomChange = function() {
       this.rootScope.mapZoom = this.zoom = this.map.getZoom();
-      return this.rootScope.$apply();
+      this.rootScope.$apply();
+      return this.setLocationPath();
     };
 
     GMap.prototype.onTypeChange = function() {
@@ -97,7 +115,8 @@
           this.polyOpts = true;
       }
       this.rootScope.mapType = this.mapType[0];
-      return this.rootScope.$apply();
+      this.rootScope.$apply();
+      return this.setLocationPath();
     };
 
     return GMap;
@@ -105,8 +124,7 @@
   })();
 
   module.factory("GoogleMap", function($rootScope, $location) {
-    var SJO, initPosition, initZoom, mapOptions, rootScope;
-    rootScope = $rootScope;
+    var SJO, initPosition, initZoom, mapOptions;
     SJO = {
       lat: 9.993552791991132,
       lng: -84.20888416469096
@@ -115,7 +133,8 @@
     initZoom = 16;
     mapOptions = {
       navBarHeight: 40,
-      rootScope: rootScope,
+      rootScope: $rootScope,
+      location: $location,
       zoom: initZoom,
       mapType: 'm',
       center: {

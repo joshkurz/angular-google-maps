@@ -13,6 +13,9 @@
     }).when("/map", {
       templateUrl: "partials/map.html",
       controller: 'MapCtrl'
+    }).when("/map:params", {
+      templateUrl: "partials/map.html",
+      controller: 'MapCtrl'
     }).otherwise({
       redirectTo: "/"
     });

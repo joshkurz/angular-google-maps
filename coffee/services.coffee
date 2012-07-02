@@ -2,15 +2,32 @@ module = angular.module "myApp.services", []
 
 class GMap
   constructor: (options) ->
+    # TODO: What is method to loop through option attribs and assign to @/this?
     @rootScope = options.rootScope
-    @center = options.center
-    @zoom = options.zoom
-    @mapType = options.mapType
+    @location = options.location
+
+    # check for lat/lng, zoom, maptype on url
+    q = @location.search().q
+    if q
+      ll = q.split(',')
+      lat = ll[0]
+      lng = ll[1]
+      @center = {lat:lat, lng:lng}
+    else
+      @center = options.center
+    
+
+    @zoom =  parseInt(@location.search().z) || options.zoom
+    @mapType =  @location.search().t || options.mapType
+
+
+
+
     @navBarHeight = options.navBarHeight
 
     @win = $(window)
     @mapEl = $("#map")
-    @mapTypes = {m: 'map', h: 'hybrid'}
+    @mapTypes = {m: 'roadmap', h: 'hybrid'}
 
 
     mapTypeControl: true
@@ -40,10 +57,12 @@ class GMap
     # resize mapEl div when window is resized
     @win.resize @resizeMapEl
 
+    console.log google.maps.MapTypeId.ROADMAP
+
     @map = new google.maps.Map(@mapEl[0], {
       zoom: @zoom
-      center: new google.maps.LatLng(options.center.lat, options.center.lng)
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      center: new google.maps.LatLng(@center.lat, @center.lng)
+      mapTypeId: @mapTypes[@mapType]
     })
 
     addListener = google.maps.event.addListener
@@ -61,6 +80,12 @@ class GMap
     @rootScope.mapZoom = @zoom
     @rootScope.mapType = @mapType
 
+    @setLocationPath()
+
+  setLocationPath: ->
+    # @location.path("http://m.ourfield.org/#/maps?q=#{@center.lat},#{@center.lng}&t=#{@mapType}&z=#{@zoom}")
+
+
   resizeMapEl: =>
     @mapEl.css('height', (@win.height() - @navBarHeight))
 
@@ -72,14 +97,16 @@ class GMap
     $('#crosshairlng').html(@center.lng)
     @rootScope.mapCenter = @center
     @rootScope.$apply()
+    @setLocationPath()
 
   onZoomChange: =>
     @rootScope.mapZoom = @zoom = @map.getZoom()
     @rootScope.$apply()
+    @setLocationPath()
 
   onTypeChange: =>
     @mapType = @map.getMapTypeId()
-    
+
     #TODO LWE: add polyOpts
     switch @map.getMapTypeId()
       when google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID
@@ -89,12 +116,12 @@ class GMap
     
     @rootScope.mapType = @mapType[0]
     @rootScope.$apply()
+    @setLocationPath()
 
 
 
 
 module.factory "GoogleMap", ($rootScope, $location) ->
-  rootScope = $rootScope
   SJO = {lat: 9.993552791991132, lng: -84.20888416469096}
   initPosition = SJO
   initZoom = 16
@@ -106,7 +133,8 @@ module.factory "GoogleMap", ($rootScope, $location) ->
 
   mapOptions = 
     navBarHeight: 40 # This should be set on app scope on init
-    rootScope: rootScope
+    rootScope: $rootScope
+    location: $location
     zoom: initZoom
     mapType: 'm'
     center:
